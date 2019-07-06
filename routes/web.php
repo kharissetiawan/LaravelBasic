@@ -42,3 +42,7 @@ Route::get('/guru', function () {
 Route::get('/admin', function () {
     return view("admin");
 });
+
+Route::get('/admin/{id}', function ($id) {
+    return ("Hello admin"). $id;
+});
