@@ -18,3 +18,27 @@ Route::get('/', function () {
 route::get('/user', function () {
     return 'Hello world!';
 });
+
+Route::get('/siswa/{id}', function ($id) {
+     return "Hello World ". $id;
+});
+
+Route::get('/guru/{id}', function ($id=null){
+    return "Hello Guru ". $id;
+});
+
+Route::get('/admin', function () {
+    return view("admin");
+});
+
+Route::get('/siswa', function () {
+    return view("siswa");
+});
+
+Route::get('/guru', function () {
+    return view("guru");
+});
+
+Route::get('/admin', function () {
+    return view("admin");
+});
